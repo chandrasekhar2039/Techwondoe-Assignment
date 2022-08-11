@@ -1,10 +1,12 @@
-import React from 'react';
 import './App.css';
+
+// Importing Pages
+import Home from './Pages/Home';
 
 function App() {
   return (
-    <div className="text-3xl font-bold underline">
-      <h1>Hello world!</h1>
+    <div>
+      <Home />
     </div>
   );
 }
