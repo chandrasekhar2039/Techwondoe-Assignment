@@ -5,7 +5,7 @@ import ThemeButton from '../ThemeSwitcher/Theme';
 
 const NavBar = () => {
   return (
-    <nav className="bg-primary dark:bg-secondary dark:text-primary h-16 md:h-18 flex justify-between sticky top-0 z-100">
+    <nav className="bg-primary dark:bg-secondary dark:text-primary h-16 md:h-18 flex justify-between sticky top-0 z-50">
       <div className="flex items-center ml-5 md:pl-10 lg:ml-5">
         <ThemeButton />
       </div>
