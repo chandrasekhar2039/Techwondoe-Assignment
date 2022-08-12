@@ -3,7 +3,7 @@ import { HiOutlineCheck } from 'react-icons/hi';
 
 const ChooseUs = () => {
   return (
-    <div className="p-3 md:p-16 dark:text-primary dark:bg-secondary">
+    <div className="p-3 md:p-16 dark:text-primary dark:bg-secondary md:pb-32">
       <div className="text-center mt-16">
         <h1 className="text-4xl font-bold leading-relaxed">Why choose us?</h1>
       </div>
