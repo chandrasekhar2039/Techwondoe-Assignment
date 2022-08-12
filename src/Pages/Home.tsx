@@ -8,8 +8,15 @@ const Home = () => {
     <div className="font-primary font-normal not-italic">
       <Navbar />
       <HeroSection />
-      <ChooseUs />
-      <Team />
+      <div className="relative">
+        <img
+          src="/Assets/vector.png"
+          alt="Vector"
+          className="absolute top-[37.5rem] -left-[50px] invisible md:visible z-20"
+        />
+        <ChooseUs />
+        <Team />
+      </div>
     </div>
   );
 };
