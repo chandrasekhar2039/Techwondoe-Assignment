@@ -4,7 +4,7 @@ import { BsFacebook, BsLinkedin, BsInstagram } from 'react-icons/bs';
 const Footer = () => {
   return (
     <div className="dark:bg-secondary bg-primary dark:text-primary grid grid-cols-2 gap-6 p-4 pt-12 pb-8 md:grid-cols-7 md:p-32">
-      <div className="text-orange md:col-span-3 hidden md:flex">
+      <div className="text-orange md:col-span-3 hidden md:flex cursor-pointer">
         <BsFacebook size="1.2rem" className="mr-5" />
         <BsLinkedin size="1.2rem" className="mr-5" />
         <BsInstagram size="1.2rem" className="mr-5" />
@@ -19,7 +19,7 @@ const Footer = () => {
         <p>Latest News</p>
         <p>Contact</p>
       </div>
-      <div className="break-words">
+      <div className="break-words xl:break-normal">
         <p>+62 (0) 9 124 5470</p>
         <p>careers@namespace.com</p>
       </div>

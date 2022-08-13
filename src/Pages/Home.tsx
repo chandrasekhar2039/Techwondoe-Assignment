@@ -6,6 +6,7 @@ import News from '../Components/News/News';
 import Pograms from '../Components/Pograms/Pograms';
 import Carrer from '../Components/Carrer/Carrer';
 import Footer from '../Components/Footer/footer';
+import Copyright from '../Components/CpoyRight/Copyright';
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
       <Pograms />
       <Carrer />
       <Footer />
+      <Copyright />
     </div>
   );
 };
