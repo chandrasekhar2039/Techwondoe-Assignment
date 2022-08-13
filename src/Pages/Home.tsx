@@ -2,6 +2,7 @@ import Navbar from '../Components/Navbar/Navbar';
 import HeroSection from '../Components/HeroSection/Hero';
 import ChooseUs from '../Components/ChooseUs/ChooseUs';
 import Team from '../Components/Team/Team';
+import News from '../Components/News/News';
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         <ChooseUs />
         <Team />
       </div>
+      <News />
     </div>
   );
 };
