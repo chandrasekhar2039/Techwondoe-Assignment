@@ -3,6 +3,7 @@ import HeroSection from '../Components/HeroSection/Hero';
 import ChooseUs from '../Components/ChooseUs/ChooseUs';
 import Team from '../Components/Team/Team';
 import News from '../Components/News/News';
+import Pograms from '../Components/Pograms/Pograms';
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
         <Team />
       </div>
       <News />
+      <Pograms />
     </div>
   );
 };
