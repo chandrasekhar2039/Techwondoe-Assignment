@@ -5,6 +5,7 @@ import Team from '../Components/Team/Team';
 import News from '../Components/News/News';
 import Pograms from '../Components/Pograms/Pograms';
 import Carrer from '../Components/Carrer/Carrer';
+import Footer from '../Components/Footer/footer';
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
       <News />
       <Pograms />
       <Carrer />
+      <Footer />
     </div>
   );
 };

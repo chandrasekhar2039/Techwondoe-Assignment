@@ -4,7 +4,7 @@ import { HiUsers, HiBriefcase } from 'react-icons/hi';
 const Pograms = () => {
   return (
     <div className="bg-[#EDEDED] p-3  py-10 md:p-36 md:px-48 relative">
-      <img src="/Assets/vectorBack.png" alt="vector" className="absolute bottom-0 -right-24 invisible md:visible" />
+      <img src="/Assets/vectorBack.png" alt="vector" className="absolute bottom-0 right-0 invisible md:visible" />
       <div className="grid md:grid-cols-2 gap-6">
         <div className="dark:bg-secondary dark:text-primary bg-primary p-10 z-20">
           <div className="flex">
