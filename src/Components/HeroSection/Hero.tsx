@@ -27,7 +27,7 @@ const HeroSection = () => {
     >
       <h1 className="text-primary text-4xl md:text-6xl absolute top-1/3 z-10 lg:invisible">Take the leap with us</h1>
       <img
-        src="/Assets/Bannervector.png"
+        src="/Assets/Herovector.png"
         alt="vector"
         className="invisible md:visible md:absolute md:bottom-0 md:right-0 md:h-5/6 "
       />

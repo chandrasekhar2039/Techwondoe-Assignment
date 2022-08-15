@@ -17,7 +17,7 @@ const Home = () => {
         <img
           src="/Assets/vector.png"
           alt="Vector"
-          className="absolute top-[37.5rem] -left-[50px] invisible md:visible z-20"
+          className="absolute top-[35rem] -left-[50px] invisible md:visible z-20"
         />
         <ChooseUs />
         <Team />

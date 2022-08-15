@@ -1,46 +1,55 @@
-# Getting Started with Create React App
+# Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Non Functional Requirements
 
-## Available Scripts
+- [x] Each section of the homepage must be a separate react component.
+- [x] Must develop using Typescript
+- [x] Muse use tailwindcss
+- [x] No hardcoding of text in react app. All the content (text and images) must be coming from a Headless CMS through its API
+- [x] Enable theming with just 2 colors i.e primary and secondary and font family
+- [ ] Create Typography components for H1, H2, and Paragraph
+- [ ] Use Storybook for 3 UI components
+  - [ ] Button - Primary and secondary
+  - [ ] Typography - H1, H2, Paragraph
+  - [ ] Sub-component of the Why Choose us section with icon, title and paragraph.
+- [x] Prettier and Linter configuration
+- [x] Host the page on Netlify, Vercel or another provider.
+- [x] Readme file on how to deploy and run the service.
+- [x] Add a checklist of the above items on ReadMe and check all the items before submitting the assignment.
 
-In the project directory, you can run:
+#### Additional Functionality Added
 
-### `npm start`
+- [x] Dark Mode/Light mode switcher
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**Live**: [Vercel](https://techwondoe-assignment-five.vercel.app/)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Steps to run and deploy.
 
-### `npm test`
+#### Run on local
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Signup for headless CMS like [contentful](https://www.contentful.com/).
+2. Get your Space id and Access Token from contentful.
+3. Create a `.env` file with following configuration
 
-### `npm run build`
+```
+REACT_APP_SPACEID=<ENTER YOUR SPACEID>
+REACT_APP_API_KEY=<ENTER YOUR ACCESS TOKEN>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Then run
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+1. npm i
+2. npm start
 
-### `npm run eject`
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+5. The application will run at port 3000 on your local.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Deploy
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Get your `env` variables and set them in the host provider environment variables section.
+2. Fork the repo and get all the latest code to the host provider.
+3. use the default commands `npm i` and `npm run build` to install and build production files to deploy.
+4. After its done go and check the preview URL.
