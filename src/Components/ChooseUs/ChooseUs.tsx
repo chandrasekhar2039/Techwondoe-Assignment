@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { HiOutlineCheck } from 'react-icons/hi';
 // Api
 import Api from '../../API/Endpoints';
+import { H1, PTag } from '../Typography/Typography';
 
 const ChooseUs = () => {
   interface IData {
@@ -30,12 +31,12 @@ const ChooseUs = () => {
   return (
     <div className="p-3 md:p-16 dark:text-primary dark:bg-secondary md:pb-32">
       <div className="text-center mt-16">
-        <h1 className="text-4xl font-bold leading-relaxed">Why choose us?</h1>
+        <H1 cName="text-4xl font-bold leading-relaxed">Why choose us?</H1>
       </div>
       <div className="text-center">
-        <p className="text-lg my-3">
+        <PTag cName="text-lg my-3">
           We have decades of experience, having successfully recruited across the globle for many years.
-        </p>
+        </PTag>
       </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:px-16 mt-10">
         {data.length !== 0 &&
@@ -47,7 +48,7 @@ const ChooseUs = () => {
                 </div>
                 <div className="m-2">
                   <h3 className="text-lg font-bold py-2">{each.fields.heading}</h3>
-                  <p>{each.fields.description}</p>
+                  <PTag>{each.fields.description}</PTag>
                 </div>
               </div>
             );

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 // Api
 import Api from '../../API/Endpoints';
+import { H1, PTag } from '../Typography/Typography';
 
 const Team = () => {
   interface IData {
@@ -34,9 +35,9 @@ const Team = () => {
         <img src={`https:${img}`} alt="Teamimg" />
       </div>
       <div className="p-5 pt-10 md:px-0 md:pt-0 lg:pr-12">
-        <p className="text-orange font-bold">Our Team</p>
-        <h1 className="text-4xl font-bold my-3">{data[0]?.fields.heading}</h1>
-        <p className="leading-6 mt-5">{data[0]?.fields.description}</p>
+        <PTag cName="text-orange font-bold">Our Team</PTag>
+        <H1 cName="text-4xl font-bold my-3">{data[0]?.fields.heading}</H1>
+        <PTag cName="leading-6 mt-5">{data[0]?.fields.description}</PTag>
         <div className="mt-5 md:mt-16">
           <button type="button" className="bg-orange p-3 px-5 font-medium rounded text-primary">
             Learn more

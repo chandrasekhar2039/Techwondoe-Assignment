@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { BsFacebook, BsLinkedin, BsInstagram } from 'react-icons/bs';
 // Api
 import Api from '../../API/Endpoints';
+import { PTag } from '../Typography/Typography';
 
 const Footer = () => {
   interface IData {
@@ -35,21 +36,21 @@ const Footer = () => {
         <BsInstagram size="1.2rem" className="mr-5" />
       </div>
       <div>
-        <p>Home</p>
-        <p>About</p>
-        <p>Candidates</p>
+        <PTag>Home</PTag>
+        <PTag>About</PTag>
+        <PTag>Candidates</PTag>
       </div>
       <div>
-        <p>Employers</p>
-        <p>Latest News</p>
-        <p>Contact</p>
+        <PTag>Employers</PTag>
+        <PTag>Latest News</PTag>
+        <PTag>Contact</PTag>
       </div>
       <div className="break-words xl:break-normal">
-        <p>{data[0]?.fields.phoneNumber}</p>
-        <p>{data[0]?.fields.email}</p>
+        <PTag>{data[0]?.fields.phoneNumber}</PTag>
+        <PTag>{data[0]?.fields.email}</PTag>
       </div>
       <div>
-        <p>{data[0]?.fields.address}</p>
+        <PTag>{data[0]?.fields.address}</PTag>
       </div>
       <div className=" flex md:hidden col-span-full justify-end text-orange pt-5 ">
         <BsFacebook size="1.2rem" className="mr-5" />

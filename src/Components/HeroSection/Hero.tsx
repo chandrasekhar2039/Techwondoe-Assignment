@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 // Api
 import Api from '../../API/Endpoints';
+import { H1 } from '../Typography/Typography';
 
 const HeroSection = () => {
   const [data, setData] = useState<String>('');
@@ -25,7 +26,7 @@ const HeroSection = () => {
       }}
       className="min-h-screen bg-center bg-cover flex justify-center align-center relative"
     >
-      <h1 className="text-primary text-4xl md:text-6xl absolute top-1/3 z-10 lg:invisible">Take the leap with us</h1>
+      <H1 cName="text-primary text-4xl md:text-6xl absolute top-1/3 z-10 lg:invisible">Take the leap with us</H1>
       <img
         src="/Assets/Herovector.png"
         alt="vector"

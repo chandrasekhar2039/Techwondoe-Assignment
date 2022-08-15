@@ -7,7 +7,7 @@
 - [x] Muse use tailwindcss
 - [x] No hardcoding of text in react app. All the content (text and images) must be coming from a Headless CMS through its API
 - [x] Enable theming with just 2 colors i.e primary and secondary and font family
-- [ ] Create Typography components for H1, H2, and Paragraph
+- [x] Create Typography components for H1, H2, and Paragraph
 - [ ] Use Storybook for 3 UI components
   - [ ] Button - Primary and secondary
   - [ ] Typography - H1, H2, Paragraph

@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { HiUsers, HiBriefcase } from 'react-icons/hi';
 // Api
 import Api from '../../API/Endpoints';
+import { H1, PTag } from '../Typography/Typography';
 
 const Pograms = () => {
   interface IData {
@@ -46,9 +47,9 @@ const Pograms = () => {
                     {each.fields.heading === 'Candidates' ? <HiUsers size="2rem" /> : <HiBriefcase size="2rem" />}
                   </div>
                 </div>
-                <h1 className="text-3xl font-bold my-5">{each.fields.heading}</h1>
-                <p>{each.fields.description}</p>
-                <p className="mt-8 text-orange text-lg cursor-pointer">Learn more</p>
+                <H1 cName="text-3xl font-bold my-5">{each.fields.heading}</H1>
+                <PTag>{each.fields.description}</PTag>
+                <PTag cName="mt-8 text-orange text-lg cursor-pointer">Learn more</PTag>
               </div>
             );
           })}

@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { HiOutlineArrowRight } from 'react-icons/hi';
 // Api
 import Api from '../../API/Endpoints';
+import { H1, H2, PTag } from '../Typography/Typography';
 
 const News = () => {
   interface IData {
@@ -33,7 +34,7 @@ const News = () => {
   return (
     <div className="dark:bg-secondary dark:text-primary p-3 pb-10 md:p-36 md:px-48">
       <div className="text-center flex justify-between my-10 px-2">
-        <h1 className="text-2xl md:text-4xl font-bold">Latest News</h1>
+        <H1 cName="text-2xl md:text-4xl font-bold">Latest News</H1>
         <button
           type="button"
           className="text-orange md:bg-orange md:p-2 md:px-5 md:font-medium md:rounded md:text-primary md:mr-9"
@@ -47,8 +48,8 @@ const News = () => {
             return (
               <div key={index} className="my-2">
                 <img src={`https:${img[index].fields.file.url}`} alt="News" className="cursor-pointer" />
-                <p className="my-4 opacity-80">{each.fields.description}</p>
-                <h2 className="font-semibold text-xl">{each.fields.heading}</h2>
+                <PTag cName="my-4 opacity-80">{each.fields.description}</PTag>
+                <H2 cName="font-semibold text-xl">{each.fields.heading}</H2>
                 <p className="flex text-orange mt-14 cursor-pointer text-lg">
                   Read more <HiOutlineArrowRight className="self-center ml-2" />
                 </p>

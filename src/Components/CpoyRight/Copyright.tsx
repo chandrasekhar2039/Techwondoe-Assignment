@@ -1,7 +1,9 @@
+import { PTag } from '../Typography/Typography';
+
 const Copyright = () => {
   return (
     <div className="text-center bg-[#EDEDED] dark:bg-secondary dark:text-primary p-5">
-      <p>Copyright © 2021 - Beyond Ltd. </p>
+      <PTag>Copyright © 2021 - Beyond Ltd. </PTag>
     </div>
   );
 };
