@@ -1,0 +1,22 @@
+.Typography--small {
+  font-size: 14px;
+  padding: 10px 16px;
+}
+.Typography--medium {
+  font-size: 18px;
+  padding: 11px 20px;
+}
+.Typography--large {
+  font-size: 25px;
+  padding: 12px 24px;
+}
+
+.Font--normal {
+  font-weight: 400;
+}
+.Typography--medium {
+  font-weight: 600;
+}
+.Typography--bold {
+  font-weight: 700;
+}

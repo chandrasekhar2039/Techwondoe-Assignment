@@ -1,0 +1,22 @@
+.main-top {
+  display: flex;
+  padding: 4rem;
+  width: 300px;
+}
+
+.icon-div {
+  margin-top: 2.25rem;
+  color: #e6692e;
+}
+
+.down-div {
+  margin: 0.5rem;
+}
+
+.heading-div {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}

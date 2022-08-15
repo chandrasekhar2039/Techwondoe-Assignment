@@ -8,10 +8,10 @@
 - [x] No hardcoding of text in react app. All the content (text and images) must be coming from a Headless CMS through its API
 - [x] Enable theming with just 2 colors i.e primary and secondary and font family
 - [x] Create Typography components for H1, H2, and Paragraph
-- [ ] Use Storybook for 3 UI components
+- [x] Use Storybook for 3 UI components
   - [x] Button - Primary and secondary
-  - [ ] Typography - H1, H2, Paragraph
-  - [ ] Sub-component of the Why Choose us section with icon, title and paragraph.
+  - [x] Typography - H1, H2, Paragraph
+  - [x] Sub-component of the Why Choose us section with icon, title and paragraph.
 - [x] Prettier and Linter configuration
 - [x] Host the page on Netlify, Vercel or another provider.
 - [x] Readme file on how to deploy and run the service.
