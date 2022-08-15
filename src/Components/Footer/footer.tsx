@@ -1,7 +1,32 @@
+import { useEffect, useState } from 'react';
 // Icons
 import { BsFacebook, BsLinkedin, BsInstagram } from 'react-icons/bs';
+// Api
+import Api from '../../API/Endpoints';
 
 const Footer = () => {
+  interface IData {
+    fields: {
+      address: String;
+      phoneNumber: String;
+      email: String;
+    };
+  }
+
+  const [data, setData] = useState<IData[]>([]);
+
+  const getData = async () => {
+    try {
+      const res = await Api.GetData('footer');
+      setData(res.data.items);
+    } catch (e) {
+      console.log(e);
+    }
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
   return (
     <div className="dark:bg-secondary bg-primary dark:text-primary grid grid-cols-2 gap-6 p-4 pt-12 pb-8 md:grid-cols-7 md:p-32">
       <div className="text-orange md:col-span-3 hidden md:flex cursor-pointer">
@@ -20,11 +45,11 @@ const Footer = () => {
         <p>Contact</p>
       </div>
       <div className="break-words xl:break-normal">
-        <p>+62 (0) 9 124 5470</p>
-        <p>careers@namespace.com</p>
+        <p>{data[0]?.fields.phoneNumber}</p>
+        <p>{data[0]?.fields.email}</p>
       </div>
       <div>
-        <p>Level 3 79 High Street Melbourne CBD 1010</p>
+        <p>{data[0]?.fields.address}</p>
       </div>
       <div className=" flex md:hidden col-span-full justify-end text-orange pt-5 ">
         <BsFacebook size="1.2rem" className="mr-5" />

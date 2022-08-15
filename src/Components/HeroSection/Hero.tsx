@@ -1,8 +1,27 @@
+import { useEffect, useState } from 'react';
+// Api
+import Api from '../../API/Endpoints';
+
 const HeroSection = () => {
+  const [data, setData] = useState<String>('');
+
+  const getData = async () => {
+    try {
+      const res = await Api.GetData('herosection');
+      setData(res.data.includes.Asset[0].fields.file.url);
+    } catch (e) {
+      console.log(e);
+    }
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
   return (
     <div
       style={{
-        backgroundImage: 'url(/Assets/Banner.png)',
+        backgroundImage: `url(https:${data})`,
       }}
       className="min-h-screen bg-center bg-cover flex justify-center align-center relative"
     >
