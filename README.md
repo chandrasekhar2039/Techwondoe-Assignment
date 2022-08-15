@@ -9,7 +9,7 @@
 - [x] Enable theming with just 2 colors i.e primary and secondary and font family
 - [x] Create Typography components for H1, H2, and Paragraph
 - [ ] Use Storybook for 3 UI components
-  - [ ] Button - Primary and secondary
+  - [x] Button - Primary and secondary
   - [ ] Typography - H1, H2, Paragraph
   - [ ] Sub-component of the Why Choose us section with icon, title and paragraph.
 - [x] Prettier and Linter configuration
